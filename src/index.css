@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /* base styles */
 * {
@@ -7,13 +7,14 @@
   color: #333;
 }
 .navbar {
-  padding: 20px;
+  padding: 25px;
   display: flex;
   align-items: center;
   max-width: 900px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-  background: grey;
+  border-bottom: 10px solid orangered;
+  background: dodgerblue;
+  font-size: 20px;
 }
 .navbar h1 {
   color: white;
@@ -27,43 +28,54 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: white;
 }
 .content {
-  max-width: 600px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
 }
 
 /* blog previews / list */
-.blog-preview {
-  padding: 10px 16px;
+img {
+  height: 283px;
+}
+.home h1 {
+  background: gray;
+  width: 163px;
+  color: white;
+  box-shadow: 5px 5px 5px 5px #333;
+}
+.Ticket-preview {
+  padding: 15px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 10px solid rgb(184, 181, 180);
+  background: dodgerblue;
+  font-weight: 800;
 }
-.blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+.Ticket-preview:hover {
+  box-shadow: 10px 5px 25px #333;
 }
-.blog-preview h2 {
+.Ticket-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: white;
   margin-bottom: 8px;
 }
-.blog-preview a{
+.Ticket-preview a {
   text-decoration: none;
 }
 
 /* blog details page */
 .blog-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: dodgerblue;
   margin-bottom: 10px;
 }
 .blog-details div {
   margin: 20px 0;
 }
 .blog-details button {
-  background: #f1356d;
+  background: dodgerblue;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -79,26 +91,43 @@
 }
 .create label {
   text-align: left;
-  display: block;
+  display: inline-block;
 }
 .create h2 {
-  font-size: 20px;
-  color: #f1356d;
+  font-size: 30px;
+  color: dodgerblue;
   margin-bottom: 30px;
+  background: rgb(190, 182, 182);
+  height: 45px;
 }
-.create input, .create textarea, .create select {
+.create input,
+.create textarea,
+.create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: 5px solid orangered;
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
 }
 .create button {
-  background: #f1356d;
+  background: dodgerblue;
   color: #fff;
   border: 0;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.footer {
+  padding: 10px;
+  column-width: auto;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-top: 10px solid orangered;
+  background: dodgerblue;
+  font-size: 20px;
+  text-align: left;
+  height: 75px;
 }

@@ -1,21 +1,23 @@
-import { Link } from 'react-router-dom';
+import index from './index.css';
+const Ticket = ({ props }) => {
+  const rsvp = props.Ticket;
+  const title = props.title;
 
-const BlogList = ({ blogs }) => {
   return (
-    <div className="blog-list">
-      {blogs.map(blog => (
-        <div className="blog-preview" key={blog.id} >
-          <Link to={`/blogs/${blog.id}`}>
-            <h2>{ blog.title }</h2>
-            <p>Written by { blog.author }</p>
-          </Link>
+    <div className="Ticket-list">
+     (Ticket.map(Ticket) = (
+        <div className="Ticket-preview" key={Ticket.id}>
+          <h2>{Ticket.id} </h2>
+          <p>
+            {Ticket.name} {Ticket.body} {Ticket.status}
+          </p>
         </div>
-      ))}
+      ))
     </div>
   );
-}
+};
  
-export default BlogList;
+export default Ticket;
 
 
 

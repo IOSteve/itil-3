@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>ITIL/SD</h1>
+      <h1>ITIL SD</h1>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/create" style={{ 
           color: 'white', 
-          backgroundColor: '#f1356d',
-          borderRadius: '10px' 
+          backgroundColor: "#f1356d",
+          borderRadius: '7px' 
         }}>Create Ticket</Link>
       </div>
     </nav>
