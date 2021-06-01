@@ -11,7 +11,7 @@ const Create = () => {
     e.preventDefault();
     const blog = { title, body, author };
 
-    fetch('http://localhost:8000/blogs/', {
+    fetch('http://localhost:3004/tickets', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog)
@@ -32,20 +32,7 @@ const Create = () => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <label>User:</label>
-        <input 
-          type="text" 
-          required 
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <label>User:</label>
-        <input 
-          type="text" 
-          required 
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
+      
         <label>Description:</label>
         <textarea
           required
@@ -57,11 +44,11 @@ const Create = () => {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         >
-          <option value="mario">open</option>
-          <option value="yoshi">closed</option>
-          <option value="yoshi">in progress</option>
-          <option value="yoshi">pending</option>
-          <option value="yoshi">resolved</option>
+          <option value="open">open</option>
+          <option value="closed">closed</option>
+          <option value="in progress">in progress</option>
+          <option value="pending">pending</option>
+          <option value="resolved">resolved</option>
         </select>
         <button>Create Ticket</button>
       </form>
